@@ -10,7 +10,12 @@ class DrinksTableSeeder extends Seeder {
      * @return void
      */
     public function run() {
-        DB::table('drinks')->insert(['name' => 'Vodka', 'comments' => 'Blood of creativity','rating' => 9,'brew_date' => '1973-09-03',]);
+        DB::table('drinks')->insert([
+        	'name' => 'Vodka', 
+        	'comments' => 'Blood of creativity',
+        	'rating' => 9,
+        	'brew_date' => '1973-09-03',
+        	]);
     }
 
 }
